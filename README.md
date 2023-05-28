@@ -24,7 +24,7 @@ http://cjstkapfhddl.cafe24.com/zerosoda/
 * 로고가 한 눈에 보이도록 중앙 배치 / 왼쪽바 형식의 gnb 제공
 * 다양한 애니메이션과 호버 효과 제공
 
-#### 상세 디자인
+#### 상세 디자인🎨
 - 로고 및 CLOOP자체의 느낌을 살리기위해 라인을 사용한 디자인 제공
 - js / jquery를 이용한 휠 및 클릭 이벤트로 페이지 이동 구현
 - Adobe photoshop을 이용한 제품 누끼 및 illustrator를 이용한 탄산거품&물결 일러스트 제작 -> svg코드 구현 적용
