@@ -362,7 +362,7 @@ html,body{
     fill: rgba(10, 89, 177,.7);
 }
 #content .brand dl{
-    margin-top: 150px;
+    margin-top: 13vh;
     text-align: center;
 }
 #content .brand dt{
@@ -375,11 +375,12 @@ html,body{
     display: block;
     position: absolute;
     left: 50%;
-    top: -210px;
+    top: -170px;
     transform: translateX(-50%);
-    width: 150px;
-    height: 200px;
+    width: 100px;
+    height: 150px;
     background: url(../image/brand_icon.png) center no-repeat;
+    background-size: auto 150px;
 }
 #content .brand dl:hover dt::before{
     animation: shake 1s infinite ease;
@@ -390,7 +391,7 @@ html,body{
     100%{transform: translateX(-50%) rotateZ(5deg);}
 }
 #content .brand dd{
-    margin-top: 30px;
+    margin-top: 20px;
     font-size: 1.2rem;
     font-weight: 300;
     line-height: 2;
@@ -475,12 +476,14 @@ html,body{
 }
 #content .shop ul li div img{
     width: 50%;
+    height: 258px;
+    object-fit: cover;
     padding: 0 25%;
 }
 #content .shop ul li dl{
     width: 50%;
     float: right;
-    padding-top: 50px;
+    padding-top: 30px;
     text-align: center;
 }
 #content .shop ul li:nth-child(2) dl{
@@ -506,7 +509,7 @@ html,body{
     margin-bottom: 7px;
 }
 #content .shop ul li dd a{
-    padding: 20px;
+    padding: 15px 0;
     color: #fff;
     width: 50%;
     margin: 30px 25% 0 25%;
