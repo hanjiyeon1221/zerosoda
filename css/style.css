@@ -34,7 +34,7 @@ html,body{
 .logo{
     position: fixed;
     left: 50%;
-    top: 50px;
+    top: 20px;
     transform: translateX(-50%);
     z-index: 30;
     border-bottom: 1px solid #333;
@@ -128,7 +128,7 @@ html,body{
     color: transparent;
     text-shadow: 5px 5px 0px #fe6b98;
     -webkit-text-stroke: 1px #111;
-    padding-top: 25vh;
+    padding-top: 20vh;
     opacity: 0;
     /* text-shadow: 5px 5px 0px #fe6b98; */
     position: relative;
@@ -225,8 +225,9 @@ html,body{
 
 #content .what svg{
     width: 700px;
-    margin-left: 50%;
-    margin-top: 50vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
     animation: updown 2s infinite ease-in-out;
 }
@@ -309,13 +310,13 @@ html,body{
 
 #content .what>p{
     text-align: center;
-    position: relative;
-    top: -100px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     font-size: 1.5rem;
     font-weight: 300;
     line-height: 1.8;
     border-top: 1px solid #999;
-    margin: 0 40%;
     padding: 30px 0;
 }
 #content .what>p::before{
@@ -353,9 +354,7 @@ html,body{
     opacity: 0.2;
 } */
 #content .brand svg{
-    position: absolute;
-    top: -15%;
-    right: 0;
+    margin-top: -150px;
     transform: rotateY(180deg);
 }
 #content .brand svg .cls-1{
@@ -363,12 +362,8 @@ html,body{
     fill: rgba(10, 89, 177,.7);
 }
 #content .brand dl{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
+    margin-top: 150px;
     text-align: center;
-    z-index: 1;
 }
 #content .brand dt{
     font-size: 2.5rem;
@@ -382,7 +377,7 @@ html,body{
     left: 50%;
     top: -210px;
     transform: translateX(-50%);
-    width: 200px;
+    width: 150px;
     height: 200px;
     background: url(../image/brand_icon.png) center no-repeat;
 }
@@ -396,12 +391,14 @@ html,body{
 }
 #content .brand dd{
     margin-top: 30px;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 300;
     line-height: 2;
 }
 #content .brand dd:nth-of-type(2){
     font-weight: 500;
+    position: relative;
+    display: inline-block;
 }
 #content .brand dd:nth-of-type(2)::before{
     content: '';
@@ -422,16 +419,16 @@ html,body{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    position: relative;
+    position: absolute;
     width: 80%;
-    height: 100%;
-    margin: 0 10%;
+    bottom: 0;
+    margin: 0 10% 30px;
     align-items: flex-end;
 }
 #content .brand ul li{
-    width: 450px;
-    height: 450px;
-    background-size: 400px;
+    width: 350px;
+    height: 350px;
+    background-size: 350px;
     background-position: center 50%;
     background-repeat: no-repeat;
     border-radius: 50%;
@@ -458,7 +455,7 @@ html,body{
 /* shop */
 #content .shop ul{
     height: 80%;
-    margin: 10% 0;
+    margin-top: 150px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
